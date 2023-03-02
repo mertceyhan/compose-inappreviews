@@ -56,3 +56,25 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
+
+ext {
+    PUBLISH_GROUP_ID = 'io.github.mertceyhan'
+    PUBLISH_VERSION = '1.0.0'
+    PUBLISH_ARTIFACT_ID = 'compose-inappreviews'
+    PUBLISH_DESCRIPTION = 'In-App Reviews for Jetpack Compose'
+    PUBLISH_URL = 'https://github.com/mertceyhan/compose-inappreviews'
+    PUBLISH_LICENSE_NAME = 'Apache License'
+    PUBLISH_LICENSE_URL =
+            'https://github.com/mertceyhan/compose-inappreviews/blob/master/LICENSE.md'
+    PUBLISH_DEVELOPER_ID = 'mertceyhan'
+    PUBLISH_DEVELOPER_NAME = 'Cafer Mert Ceyhan'
+    PUBLISH_DEVELOPER_EMAIL = 'c.mertceyhn@gmail.com'
+    PUBLISH_SCM_CONNECTION =
+            'scm:git:github.com/mertceyhan/compose-inappreviews.git'
+    PUBLISH_SCM_DEVELOPER_CONNECTION =
+            'scm:git:ssh://github.com/mertceyhan/compose-inappreviews.git'
+    PUBLISH_SCM_URL =
+            'https://github.com/mertceyhan/compose-inappreviews/tree/master'
+}
+
+apply from: "${rootProject.projectDir}/scripts/publish-module.gradle"
