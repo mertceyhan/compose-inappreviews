@@ -14,9 +14,17 @@ interface that uses the Android's In-App Reviews API to launch the review flow.
 
 To use this library in your Jetpack Compose project, first add it as a dependency:
 
-```kotlin
+```groovy
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+```groovy
 dependencies {
-    implementation ""
+    implementation 'com.github.mertceyhan:compose-inappreviews:1.0.0'
 }
 ```
 
